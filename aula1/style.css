@@ -1,3 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cabecalho {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.nome {
+    font-size: 30px;
+    font-weight: bold;
+    color: #a331c5;
+}
+section > h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.metas >li {
+    margin-bottom: 10px;
+}
+.bio p {
+    margin-bottom: 10px;
+}
 img {
     display: block;        
     margin-left: auto;     
@@ -32,7 +57,7 @@ summary {
     font-size: 30px;
 }
 li {
-    text-align; center;
+    text-align: center;
     font-size: 20px;
 }
 ol {
@@ -48,4 +73,10 @@ body {
 
 h1,h2,h3, summary{
     color: #bb86fc;
+}
+#cabecalho {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
