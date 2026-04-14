@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_atv.css">
+    <title>Formulário Jogos</title>
+</head>
+<body>
+    <h1>Formulário de participação para os jogos universitários</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Informações Pessoais
+            </legend>
+            <label for="nome">
+                Nome completo:
+            </label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required minlength="3" maxlength="100"><br>
+
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required><br>
+
+            <label for="telefone">
+                Telefone:
+            </label>
+            <input type="number" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required><br>
+
+            <label for="nascimento">
+                Data de nascimento:
+            </label>
+
+            <input type="date" id="nascimento" name="nascimento"><br>
+
+            <label for="Universidade">
+                Universidade:
+            </label>
+            <input type="text" id="Universidade" name="Universidade" placeholder="Digite o nome da sua universidade..." required minlength="3" maxlength="100"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <label for="esporte">
+                Selecione o esporte que deseja participar:
+            </label>
+            <select id="esporte" name="esporte" required>
+                <option value="">Selecione...</option>
+                <option value="futebol">Futebol</option>
+                <option value="basquete">Basquete</option>
+                <option value="volei">Vôlei</option>
+                <option value="atletismo">Atletismo</option></select><br>
+
+            <label for="nivel">
+                Nível de experiência em anos:
+            </label>
+
+            <input type="range" id="experiencia" name="experiencia" min="0" max="10" value="5"
+                oninput="saidaNivel.value = experiencia.value">
+            <output name="saidaNivel" id="saidaNivel">5</output><br>
+
+            <label for="observacoes">
+                Observações:
+            </label><br>
+            <textarea id="observacoes" name="observacoes" placeholder="Digite suas observações..."></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Upload</legend>
+
+            <label for="portfolio">
+                Enviar seu portfólio esportivo (fotos, vídeos, certificados):
+            </label><br>
+
+            <input type="file" id="portfolio" name="portfolio" multiple accept=".pdf,.jpg,.png">
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar formulário
+        </button>
+
+        <button type="reset">
+            Limpar formulário
+        </button>
+
+    </form>
+
+    <main>
+        
+    </main>
+</body>
+</html>
