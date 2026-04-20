@@ -1,3 +1,9 @@
+/* 
+    * Flex e Grid estão legais, realizei algumas correções no grid
+
+    * ALém disso fiz algumas observações em relação ao %
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
+  padding: 15px 5%; /* ! Utilizar % em padding não é uma boa prática */
   background-color: #1c0475;
   color: white;
   min-height: 70px;
@@ -32,16 +38,16 @@ nav a {
 }
 
 .botao {
-    width: auto;
-    padding: 8px 15px;
-    background-color: #ffcc00;
-    color: #1c0475;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-size: 14px;
+  width: auto;
+  padding: 8px 15px;
+  background-color: #ffcc00;
+  color: #1c0475;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 14px;
 }
 
 h2 {
@@ -51,14 +57,17 @@ h2 {
 }
 
 .produtos, .promocoes {
-  padding: 0 5% 40px;
+  padding: 0 5% 40px; /* ! % */
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.container-grid {
+/* ! Nome da classe estava errada: container-grid */
+.grade_de_produtos, .grade_de_promocoes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* ! Repeat está errado: repeat(repetição, tamanho) */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 20px;
 }
 

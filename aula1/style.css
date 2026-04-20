@@ -1,3 +1,12 @@
+/* * Gostei da estilização, utilizou bastante seletores
+    
+    * Uma observação seria construir o CSS na mesma ordem que o HTML
+    * Por exemplo no HTML: HEADER - MAIN - FOOTER
+    * A sua ordem no css segue o mesmo: HEADER - MAIN - FOOTER 
+
+    ! Apenas faltou utilizar pseudo-classes e pseudo-elemento da atv3
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -71,9 +80,16 @@ body {
     color: #e0e0e0;
 }
 
+/* ? Nestes casos, é bom utilizar uma classe */
 h1,h2,h3, summary{
     color: #bb86fc;
 }
+
+/* 
+! Existe um estido de cabeçalho logo em cima
+! Então não era necessário este aqui
+! Apenas reutilizasse o de cima
+*/
 #cabecalho {
     background-color: #1f1f1f;
     padding: 20px;

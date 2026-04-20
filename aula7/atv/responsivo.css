@@ -1,10 +1,17 @@
+/* 
+    * Abrindo no celular, a responsividade não está muito boa
+    * Geralmente em celulares colocamos o grid apenas com 1 coluna
+    * Para que não tenha erro de estorar, o que está acontecendo
+
+    * Para o header, está cabendo tudo mas está meio apertado
+    * Para celular geralmente colocamos um menu, mas foje do escopo, apenas citando
+*/
+
 @media (min-width: 768px) {
     header {
-        header {
         flex-direction: column;
-        padding: 20px 5%;
+        padding: 20px 5%; /* ! % */
         gap: 20px;
-  }
     }
     
     nav {
