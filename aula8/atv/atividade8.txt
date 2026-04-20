@@ -8,3 +8,5 @@ Não precisa utilizar a prática do Mobile
 First
 
 Faça o commit e push
+-
+Coloquei a atividade 8 na pasta da atividade 7 com um arquivo.css responsivo
