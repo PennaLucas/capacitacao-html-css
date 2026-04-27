@@ -71,62 +71,64 @@
 
 <form>
 
-   
-    <legend><strong>Dados Pessoais</strong></legend>
+    <fieldset>
+        <legend><strong>Dados Pessoais</strong></legend>
 
-    <label>Nome completo</label>
-    <input type="text" placeholder="Digite seu nome" required>
+        <label>Nome completo</label>
+        <input type="text" placeholder="Digite seu nome" required>
 
-    <label>Email</label>
-    <input type="email" placeholder="exemplo@email.com" required>
+        <label>Email</label>
+        <input type="email" placeholder="exemplo@email.com" required>
 
-    <label>Senha</label>
-    <input type="password" required>
+        <label>Senha</label>
+        <input type="password" required>
 
-    <label>Data de nascimento</label>
-    <input type="date">
+        <label>Data de nascimento</label>
+        <input type="date">
 
-    <label>Telefone</label>
-    <input type="tel" placeholder="(00) 00000-0000">
+        <label>Telefone</label>
+        <input type="tel" placeholder="(00) 00000-0000">
 
-    
+    </fieldset>
 
-   <legend><strong>Informações Acadêmicas</strong></legend>
+    <fieldset>
+        <legend><strong>Informações Acadêmicas</strong></legend>
 
-    <label>Curso</label>
-    <select>
-        <option>Ciência da Computação</option>
-        <option>Biologia</option>
-        <option>Engenharia</option>
-        <option>Administração</option>
-    </select>
+        <label>Curso</label>
+        <select>
+            <option>Ciência da Computação</option>
+            <option>Biologia</option>
+            <option>Engenharia</option>
+            <option>Administração</option>
+        </select>
 
-    <label>Turno</label>
-    <input type="radio" name="turno" class="inline"> Manhã
-    <input type="radio" name="turno" class="inline"> Tarde
-    <input type="radio" name="turno" class="inline"> Noite
+        <label>Turno</label>
+        <input type="radio" name="turno" class="inline"> Manhã
+        <input type="radio" name="turno" class="inline"> Tarde
+        <input type="radio" name="turno" class="inline"> Noite
 
-    <label>Disciplinas de interesse</label>
-    <input type="checkbox" class="inline"> Programação
-    <input type="checkbox" class="inline"> Matemática
-    <input type="checkbox" class="inline"> Física
+        <label>Disciplinas de interesse</label>
+        <input type="checkbox" class="inline"> Programação
+        <input type="checkbox" class="inline"> Matemática
+        <input type="checkbox" class="inline"> Física
 
+    </fieldset>
 
-    
-    <legend><strong>Outras Informações</strong></legend>
+    <fieldset>
+        <legend><strong>Outras Informações</strong></legend>
 
-    <label>Upload de documento</label>
-    <input type="file">
+        <label>Upload de documento</label>
+        <input type="file">
 
-    <label>Cor favorita</label>
-    <input type="color">
+        <label>Cor favorita</label>
+        <input type="color">
 
-    <label>Nível de satisfação com o curso</label>
-    <input type="range" min="0" max="10">
+        <label>Nível de satisfação com o curso</label>
+        <input type="range" min="0" max="10">
 
-    <label>Observações</label>
-    <textarea rows="4" placeholder="Digite algo..."></textarea>
-   
+        <label>Observações</label>
+        <textarea rows="4" placeholder="Digite algo..."></textarea>
+    </fieldset>
 
     <button class="btn" type="submit">Cadastrar</button>
     <button class="btn" type="reset">Limpar</button>
